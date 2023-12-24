@@ -7,44 +7,45 @@ h1{
   font-size: 4rem;
 }
 
-h2{
-  text-align: center;
-  text-decoration: underline;
+
+
+#btn{
+  height: 75px;
+  width: 250px;
+  background-color: rgb(22, 22, 22);
+  border-radius: 25px;
+  margin: auto;
+  display: block;
+  margin-bottom: 80px;
+  font-size: 2rem;
   font-family: 'Tangerine', serif;
   font-style: bold;
-  color: rgb(0, 0, 0);
-  font-size: 3rem;
-  padding-bottom: 4rem;
-  pointer-events: visiblePainted;
-  
+  color: #ffffff;
 }
 
-/* body{
-  background-color: #EEF5FF; 
-  background-image: url(bg.jpg);
-  background-size: cover;
-  background-color: rgba(255, 255, 255, 0.01);
-} */
+#btn:hover{
+  background-color: rgb(203, 203, 203);
+  color: rgb(0, 0, 0);
+  transition: 0.3s;
+  border: #ffffff;
+  transform: scale(0.95);
+}
 body {
   position: relative;
+ background-color: rgb(198, 218, 235);
+
 }
 
-body::after {
-  content: "";
-  background-image: url('bg.jpg');
-  background-size: cover; /* Adjust as needed */
+h2{
+  text-align: center;
+  font-size: 3rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: bold;
+  color: rgb(0, 0, 0);
+  margin-top: 50px;
  
-  background-repeat: no-repeat; /* Adjust as needed */
-  opacity: 0.7; 
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -7;
-
+ color: rgb(76, 80, 88);
 }
-
 
 #c1{
   
@@ -52,6 +53,7 @@ body::after {
    padding-left:33%;
    width: 20%;
    margin: auto;
+   margin-bottom: 20px;
 }
 img{
  
@@ -65,4 +67,11 @@ img{
     width: 20%;
     margin: auto;
    
+  }
+
+  hr{
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }

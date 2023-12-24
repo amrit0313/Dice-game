@@ -9,28 +9,17 @@ var randomNumber1= Math.floor(Math.random()*6)+1;
 var newImg1 = randomNumber1 + ".png";
 document.querySelectorAll("img")[1].setAttribute("src", newImg1);
 
-
+document.getElementById("btn").addEventListener("click", function(){
+    location.reload();
+});
 if(randomNumber > randomNumber1){
-  document.querySelector("h2").innerHTML = "Amrit wins";
+  document.querySelector("h2").innerHTML = "Player A wins";
   
 }
 else if(randomNumber1>randomNumber){
-    document.querySelector("h2").innerHTML= "sandeep wins";
+    document.querySelector("h2").innerHTML= "Player B wins";
 }
 else{
      document.querySelector("h2").innerHTML= "You made a Boo Boo ...";
 }
 
-// document.querySelector("h2").addEventListener("click", function(){
-
-//   if(randomNumber > randomNumber1){
-//     document.querySelector("h2").innerHTML = "Amrit wins";
-    
-//   }
-//   else if(randomNumber1>randomNumber){
-//       document.querySelector("h2").innerHTML= "shova wins";
-//   }
-//   else{
-//        document.querySelector("h2").innerHTML= "You made a Boo Boo ...";
-//   }
-// })
