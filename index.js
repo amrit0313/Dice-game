@@ -9,9 +9,25 @@ var randomNumber1= Math.floor(Math.random()*6)+1;
 var newImg1 = randomNumber1 + ".png";
 document.querySelectorAll("img")[1].setAttribute("src", newImg1);
 
+// document.getElementById("btn").addEventListener("click", function(){
+//     let audio =new Audio("dice-142528.mp3");
+//     audio.play();
+
+//    audio.onplay=function(){
+//      location.reload();
+//    };
+// });
+
 document.getElementById("btn").addEventListener("click", function(){
-    location.reload();
+  let audio = new Audio("dice-142528.mp3");
+  audio.play();
+
+  // Delay the page reload
+  setTimeout(function() {
+      location.reload();
+  }, 1001); // Delay in milliseconds
 });
+
 if(randomNumber > randomNumber1){
   document.querySelector("h2").innerHTML = "Player A wins";
   
